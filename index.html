@@ -31,46 +31,49 @@
     <div class="glow1"></div>
 
     <div class="container">
-    <script>
-      (function () {
-        function easeInOutQuad(t) {
-          return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-        }
-
-        function smoothScrollTo(targetY, duration) {
-          var startY = window.scrollY || window.pageYOffset;
-          var diff = targetY - startY;
-          var startTime = null;
-
-          function step(timestamp) {
-            if (!startTime) startTime = timestamp;
-            var time = timestamp - startTime;
-            var progress = Math.min(time / duration, 1);
-            var eased = easeInOutQuad(progress);
-            window.scrollTo(0, Math.round(startY + diff * eased));
-            if (time < duration) requestAnimationFrame(step);
+      <script>
+        (function () {
+          function easeInOutQuad(t) {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
           }
 
-          requestAnimationFrame(step);
-        }
+          function smoothScrollTo(targetY, duration) {
+            var startY = window.scrollY || window.pageYOffset;
+            var diff = targetY - startY;
+            var startTime = null;
 
-        document.querySelectorAll('nav a[href^="#"]').forEach(function (link) {
-          link.addEventListener('click', function (e) {
-            e.preventDefault();
-            var id = this.getAttribute('href').slice(1);
-            var el = document.getElementById(id);
-            if (!el) return;
-            var targetY = el.getBoundingClientRect().top + window.scrollY;
-            var duration = 1000; // 1000ms = slightly slower
-            smoothScrollTo(targetY, duration);
-            // Update URL hash after scroll finishes
-            setTimeout(function () {
-              history.replaceState && history.replaceState(null, '', '#' + id);
-            }, duration + 10);
-          });
-        });
-      })();
-    </script>
+            function step(timestamp) {
+              if (!startTime) startTime = timestamp;
+              var time = timestamp - startTime;
+              var progress = Math.min(time / duration, 1);
+              var eased = easeInOutQuad(progress);
+              window.scrollTo(0, Math.round(startY + diff * eased));
+              if (time < duration) requestAnimationFrame(step);
+            }
+
+            requestAnimationFrame(step);
+          }
+
+          document
+            .querySelectorAll('nav a[href^="#"]')
+            .forEach(function (link) {
+              link.addEventListener("click", function (e) {
+                e.preventDefault();
+                var id = this.getAttribute("href").slice(1);
+                var el = document.getElementById(id);
+                if (!el) return;
+                var targetY = el.getBoundingClientRect().top + window.scrollY;
+                var duration = 1000; // 1000ms = slightly slower
+                smoothScrollTo(targetY, duration);
+                // Update URL hash after scroll finishes
+                setTimeout(function () {
+                  history.replaceState &&
+                    history.replaceState(null, "", "#" + id);
+                }, duration + 10);
+              });
+            });
+        })();
+      </script>
       <main>
         <section id="home" class="home content">
           <div class="home-info">
