@@ -1,9 +1,9 @@
 :root {
-  --main-bg: #0b0c10;
-  --card-bg: #14102b;
-  --text-color: #14102b;
-  --primary-color: white;
-  --secondary-color: #2ecc71;
+  --main-bg: #f6f7fb;
+  --card-bg: #ffffff;
+  --text-color: #0b0c10;
+  --primary-color: #0b0c10;
+  --secondary-color: #ffffff;
   --font-large: 3rem;
   --spacing: 1.5rem;
   --font-family: "Source Code Pro", monospace;
@@ -72,6 +72,58 @@ body::after {
   align-items: center;
   background: none;
   border: none;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.header nav {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Top-right social icons in header */
+.header-social {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  z-index: 1100;
+}
+
+.header-social a {
+  color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: all 0.18s ease;
+  font-size: 1.05rem;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.header-social a:hover {
+  color: var(--secondary-color);
+  /* match contact icons: scale up slightly and lift */
+  transform: translateY(-3px) scale(1.2);
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.04);
+}
+
+.header-social a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.12);
+  transform: translateY(-2px) scale(1.08);
+}
+
+@media (max-width: 760px) {
+  .header-social {
+    display: none;
+  }
 }
 
 nav ul {
@@ -142,7 +194,7 @@ main {
     "CRSV" 0.5,
     "ELSH" 0,
     "ELXP" 0;
-  font-size: 100px;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
   margin-top: 0;
 }
 .home-info button {
@@ -157,8 +209,10 @@ main {
   width: 50%;
   flex: 1 1;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .home-image img {
@@ -167,6 +221,32 @@ main {
   /* max-height: 420px; */
   object-fit: cover;
   border-radius: 12px;
+  position: relative;
+  z-index: 2;
+  box-shadow:
+    0 18px 40px rgba(11, 12, 16, 0.08),
+    0 6px 18px rgba(11, 12, 16, 0.06);
+}
+
+/* Decorative pedestal and soft shadow under the image to mask cutoff */
+/* Pedestal removed to avoid white bar under the image */
+
+.home-image::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -26px;
+  width: 66%;
+  height: 36px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(11, 12, 16, 0.12),
+    rgba(11, 12, 16, 0)
+  );
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(6px);
 }
 
 @media (max-width: 760px) {
@@ -178,8 +258,24 @@ main {
   .home-info {
     text-align: center;
   }
+  .home-info h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .home-image {
     width: 100%;
+  }
+}
+
+/* Ensure name stays on one line on larger screens */
+.home-info h1 {
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .home-info h1 {
+    font-size: clamp(1.5rem, 8vw, 2.25rem);
   }
 }
 
