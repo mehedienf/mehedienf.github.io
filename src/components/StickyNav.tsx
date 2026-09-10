@@ -19,9 +19,9 @@ const SECTIONS: NavSection[] = [
     icon: "bi-cpu",
   },
   {
-    id: "about",
-    label: "About",
-    icon: "bi-person-badge",
+    id: "experience",
+    label: "Experience",
+    icon: "bi-briefcase",
   },
   {
     id: "contact",

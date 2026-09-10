@@ -52,7 +52,7 @@ export default function Navbar({
     { id: "home", label: "Home" },
     { id: "project", label: "Projects" },
     { id: "skills", label: "Skills" },
-    { id: "about", label: "About" },
+    { id: "experience", label: "Experience" },
     { id: "contact", label: "Contact" },
   ];
 

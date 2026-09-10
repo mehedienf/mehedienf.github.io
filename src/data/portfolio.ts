@@ -108,6 +108,49 @@ export const portfolioData = {
       details: "#",
     },
   ],
+  experiences: [
+    {
+      role: "Full Stack Software Developer",
+      company: "Current Company / Tech Agency",
+      location: "Dhaka, Bangladesh · Hybrid",
+      period: "2024 — Present",
+      isCurrent: true,
+      description:
+        "Building and scaling robust full-stack web applications with Next.js, React, and Node.js. Designing clean RESTful APIs and optimizing database workflows.",
+      achievements: [
+        "Spearheading modern frontend architecture with responsive UI/UX and micro-interactions.",
+        "Implementing secure authentication, state management, and optimized server-side rendering.",
+      ],
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Tailwind CSS",
+        "PostgreSQL",
+      ],
+    },
+    {
+      role: "Frontend Web Developer",
+      company: "Previous Tech Studio / Software House",
+      location: "Remote / On-site",
+      period: "2022 — 2024",
+      isCurrent: false,
+      description:
+        "Developed modern, responsive web applications and interactive client interfaces. Collaborated closely with design teams to translate complex wireframes into high-performance web products.",
+      achievements: [
+        "Built high-converting user interfaces and optimized web performance across all device viewports.",
+        "Refactored codebase for modularity, reducing bundle sizes and increasing load speeds.",
+      ],
+      technologies: [
+        "React.js",
+        "JavaScript (ES6+)",
+        "Tailwind CSS",
+        "REST APIs",
+        "Git",
+      ],
+    },
+  ],
   contact: {
     email: "enammehedi06@gmail.com",
     github: "https://github.com/mehedienf",
