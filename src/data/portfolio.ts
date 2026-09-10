@@ -70,24 +70,39 @@ export const portfolioData = {
   projects: [
     {
       title: "E-Commerce Platform",
+      logo: "",
+      icon: "bi-bag-check-fill",
+      iconGradient:
+        "linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.25))",
       description:
-        "A full-stack e-commerce solution with Next.js, featuring user authentication, payment processing, and a dynamic product catalog with glassmorphism UI.",
-      github: "#",
-      live: "#",
+        "A full-stack e-commerce solution with Next.js, featuring user authentication, payment processing, and a dynamic product catalog.",
+      view: "#",
+      github: "https://github.com/mehedienf",
+      details: "#",
     },
     {
       title: "Task Management App",
+      logo: "",
+      icon: "bi-check2-square",
+      iconGradient:
+        "linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.25))",
       description:
-        "A productivity app built with React and Firebase, allowing users to organize tasks, set deadlines, and track progress seamlessly.",
-      github: "#",
-      live: "#",
+        "A productivity suite built with React and Firebase, allowing users to organize tasks, set deadlines, and track progress seamlessly.",
+      view: "#",
+      github: "https://github.com/mehedienf",
+      details: "#",
     },
     {
       title: "Portfolio Website",
+      logo: "",
+      icon: "bi-layers-fill",
+      iconGradient:
+        "linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(139, 92, 246, 0.25))",
       description:
-        "An amazing portfolio website designed with modern UI/UX principles, showcasing clean code, animations, and creativity.",
-      github: "#",
-      live: "#",
+        "A sleek portfolio designed with modern Next.js App Router, glassmorphism UI, interactive sticky navigation, and animations.",
+      view: "#",
+      github: "https://github.com/mehedienf",
+      details: "#",
     },
   ],
   contact: {

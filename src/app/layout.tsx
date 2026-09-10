@@ -21,7 +21,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Orbitron:wght@400..900&display=swap"
           rel="stylesheet"
         />
         <link

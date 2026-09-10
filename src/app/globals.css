@@ -7,11 +7,9 @@
   --secondary-color: #ffffff;
   --accent-color: #554acc;
   --font-large: 3rem;
-  --spacing: 1.5rem;
-  --font-family: "Source Code Pro", monospace;
-  --heading-font-family:
-    "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
-  --nav-font-family: "Plus Jakarta Sans", "Gill Sans", sans-serif;
+  --font-family: "Orbitron", system-ui, -apple-system, sans-serif;
+  --heading-font-family: "Orbitron", system-ui, -apple-system, sans-serif;
+  --nav-font-family: "Orbitron", system-ui, -apple-system, sans-serif;
 }
 
 html {
@@ -20,6 +18,8 @@ html {
 }
 
 body {
+  font-family: var(--font-family);
+  letter-spacing: 0.04em;
   background-color: var(--main-bg);
   margin: 0;
   min-height: 100vh;
@@ -135,9 +135,10 @@ nav ul {
 
 nav li a {
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.15rem;
+  font-weight: 600;
   font-family: var(--nav-font-family);
+  letter-spacing: 0.06em;
   color: var(--primary-color);
   transition: color 0.3s ease;
 }
@@ -327,8 +328,8 @@ section.content {
   font-size: clamp(2rem, 3.8vw, 2.85rem);
   font-weight: 800;
   margin: 0;
-  line-height: 1.15;
-  letter-spacing: -0.035em;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
   background: linear-gradient(135deg, #0b0c10 35%, #554acc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -341,7 +342,8 @@ section.content {
   opacity: 0.72;
   margin: 0.5rem 0 0;
   max-width: 620px;
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 .section-divider {
@@ -363,76 +365,172 @@ section.content {
   font-size: clamp(2rem, 3.5vw, var(--font-large));
   text-align: left;
   margin-bottom: 1.25rem;
-  letter-spacing: -0.035em;
+  letter-spacing: 0.05em;
   background: linear-gradient(135deg, #0b0c10 35%, #554acc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Project Grid & Cards */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 15px;
+/* Project List & Cards (1 card per row) */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.58);
   border: 1px solid rgba(255, 255, 255, 0.85);
-  border-radius: 16px;
-  padding: 26px;
+  border-radius: 22px;
+  padding: 24px 28px;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 4px 20px rgba(11, 12, 16, 0.03);
+  box-shadow: 0 4px 24px rgba(11, 12, 16, 0.035);
   transition:
-    transform 0.3s ease,
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
     background 0.3s ease,
     box-shadow 0.3s ease,
     border-color 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 12px 32px rgba(85, 74, 204, 0.08);
+  box-shadow: 0 12px 36px rgba(85, 74, 204, 0.08);
   border-color: rgba(85, 74, 204, 0.3);
 }
 
-.project-card h3 {
-  margin-top: 0;
-  font-size: 1.8rem;
+/* Left side App / Custom Logo Box */
+.project-card-logo {
+  flex-shrink: 0;
+  width: clamp(160px, 30%, 230px);
+  height: 175px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 18px rgba(11, 12, 16, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.project-card p {
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+.project-logo-image-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.project-card a {
+.project-logo-img {
+  object-fit: contain !important;
+  padding: 16px;
+  border-radius: 18px;
+}
+
+.project-logo-custom-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 18px;
+}
+
+.project-logo-custom-box i {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-logo-custom-box i {
+  transform: scale(1.1);
+}
+
+.project-logo-hint {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  opacity: 0.55;
+  font-family: var(--font-family);
+}
+
+/* Right side content (Title, Description, Buttons) */
+.project-card-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-card-title {
+  font-family: var(--heading-font-family);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin: 0 0 8px 0;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+.project-card-desc {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  letter-spacing: 0.035em;
+  color: var(--primary-color);
+  opacity: 0.78;
+  margin: 0 0 20px 0;
+}
+
+/* Action Buttons (View, GitHub, Details) */
+.project-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-btn {
   color: var(--primary-color);
   text-decoration: none;
-  margin-right: 12px;
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(11, 12, 16, 0.2);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(11, 12, 16, 0.18);
   padding: 8px 22px;
   border-radius: 30px;
   font-family: var(--heading-font-family);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 600;
+  letter-spacing: 0.06em;
   transition: all 0.25s ease;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(11, 12, 16, 0.03);
 }
 
-.project-card a i {
-  font-size: 1rem;
-  transition: transform 0.25s ease;
+.project-btn i {
+  font-size: 0.95rem;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
 }
 
-.project-card a:hover {
+.project-btn:hover {
   background: var(--primary-color);
   color: #ffffff;
   border-color: var(--primary-color);
@@ -440,7 +538,7 @@ section.content {
   box-shadow: 0 4px 14px rgba(11, 12, 16, 0.18);
 }
 
-.project-card a:hover i {
+.project-btn:hover i {
   color: #3dfd12;
   transform: scale(1.1);
 }
@@ -474,7 +572,7 @@ section.content {
   font-weight: 700;
   margin: 2.5rem 0 1rem;
   text-align: left;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.05em;
 }
 
 .skills ul {
@@ -793,7 +891,7 @@ footer p {
   font-family: var(--heading-font-family);
   font-size: 1.35rem;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.05em;
   margin: 0;
   color: var(--primary-color);
 }
@@ -817,7 +915,7 @@ footer p {
   font-family: var(--heading-font-family);
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.05em;
   background: rgba(255, 255, 255, 0.65);
   border: 1px solid rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(16px);
@@ -992,5 +1090,19 @@ footer p {
   .nav-connector.active-connector .connector-string {
     width: auto;
     height: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .project-card-logo {
+    width: 100%;
+    height: 150px;
   }
 }
