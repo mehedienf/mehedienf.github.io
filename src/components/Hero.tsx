@@ -5,10 +5,11 @@ export default function Hero() {
   return (
     <section id="home" className="home content">
       <div className="home-info">
-        {/* Availability / Status Badge */}
+        {/* Greeting Badge */}
         <div className="hero-status-pill">
-          <span className="hero-status-pulse"></span>
-          <span className="hero-status-text">{portfolioData.hero.status}</span>
+          <span className="hero-status-text">
+            {portfolioData.hero.greeting}
+          </span>
         </div>
 
         {/* Name - strictly in Bitcount Single font */}

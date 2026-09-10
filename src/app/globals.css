@@ -7,9 +7,9 @@
   --secondary-color: #ffffff;
   --accent-color: #554acc;
   --font-large: 3rem;
-  --font-family: "Orbitron", system-ui, -apple-system, sans-serif;
-  --heading-font-family: "Orbitron", system-ui, -apple-system, sans-serif;
-  --nav-font-family: "Orbitron", system-ui, -apple-system, sans-serif;
+  --font-family: "Exo", "Exo 2", system-ui, -apple-system, sans-serif;
+  --heading-font-family: "Exo", "Exo 2", system-ui, -apple-system, sans-serif;
+  --nav-font-family: "Exo", "Exo 2", system-ui, -apple-system, sans-serif;
 }
 
 html {
@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: var(--font-family);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   background-color: var(--main-bg);
   margin: 0;
   min-height: 100vh;
@@ -246,28 +246,25 @@ main {
 
 .hero-status-text {
   font-family: var(--heading-font-family);
-  font-size: 0.76rem;
+  font-size: 0.86rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
-  color: rgba(11, 12, 16, 0.75);
+  letter-spacing: 0.05em;
+  color: rgba(11, 12, 16, 0.85);
 }
 
-/* Hero Name - strictly in Bitcount Single font */
+/* Hero Name - in Orbitron font */
 .home-info h1,
 .hero-name {
-  font-family: "Bitcount Single", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0;
-  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-family:
+    "Orbitron",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4.2vw, 3.5rem);
   color: var(--primary-color);
-  line-height: 1.15;
-  letter-spacing: 0.02em;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
   margin: 0 0 0.85rem 0;
   white-space: nowrap;
 }

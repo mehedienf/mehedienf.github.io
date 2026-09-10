@@ -6,7 +6,7 @@ export const portfolioData = {
       "Crafting modern, high-performance web applications and intuitive digital experiences with passion and precision.",
     image: "/images/my/me.jpg",
     resumeLink: "#",
-    status: "Available for new opportunities",
+    greeting: "Hi, I am",
   },
   about: {
     description:
