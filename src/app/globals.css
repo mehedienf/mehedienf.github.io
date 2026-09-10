@@ -623,7 +623,47 @@ main {
   box-shadow: none !important;
 }
 
+/* Ambient backlight glow behind hero person cutout */
+.hero-image-glow {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90%;
+  height: 80%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(99, 102, 241, 0.45) 0%,
+    rgba(147, 51, 234, 0.3) 38%,
+    rgba(56, 189, 248, 0.18) 60%,
+    rgba(0, 0, 0, 0) 78%
+  );
+  filter: blur(48px);
+  -webkit-filter: blur(48px);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+  animation: heroGlowPulse 6s ease-in-out infinite alternate;
+}
+
+@keyframes heroGlowPulse {
+  0% {
+    transform: translate(-50%, 0) scale(0.92);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-50%, -10px) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 0) scale(0.95);
+    opacity: 0.85;
+  }
+}
+
 .hero-person-img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: auto;
   max-height: 520px;

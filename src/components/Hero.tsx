@@ -85,6 +85,7 @@ export default function Hero() {
       {/* Hero Image */}
       <div className="home-image">
         <div className="hero-image-wrapper">
+          <div className="hero-image-glow" aria-hidden="true"></div>
           <Image
             src={portfolioData.hero.image}
             alt={portfolioData.hero.name}
