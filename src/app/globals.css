@@ -395,32 +395,47 @@ main {
 .hero-social-row {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .hero-social-icon {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
+  padding: 0;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(11, 12, 16, 0.1);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(11, 12, 16, 0.12);
   color: var(--primary-color);
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   text-decoration: none;
-  transition: all 0.22s ease;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 6px rgba(11, 12, 16, 0.04);
+}
+
+.hero-social-icon i {
+  font-size: 1.25rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease;
 }
 
 .hero-social-icon:hover {
   background: var(--primary-color);
   color: #ffffff;
   border-color: var(--primary-color);
-  transform: translateY(-3px) scale(1.08);
-  box-shadow: 0 5px 14px rgba(11, 12, 16, 0.15);
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 6px 16px rgba(11, 12, 16, 0.16);
+}
+
+.hero-social-icon:hover i {
+  transform: scale(1.05);
 }
 
 /* Hero Image - Standalone with Fade-to-Bottom Gradient Mask */
