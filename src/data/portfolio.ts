@@ -1,12 +1,12 @@
 export const portfolioData = {
   hero: {
     name: "Mehadi Anam Nerjhor",
-    role: "Full Stack Developer",
+    role: "Full Stack Software Developer",
     tagline:
-      "Crafting modern, high-performance web applications and intuitive digital experiences with passion and precision.",
+      "Building elegant software with clean code. Driven by curiosity, dedicated to solving real-world problems through modern tech stack.",
     image: "/images/my/me.jpg",
     resumeLink: "#",
-    greeting: "Hi, I am",
+    greeting: "Hello, I am",
   },
   about: {
     description:

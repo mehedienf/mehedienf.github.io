@@ -39,22 +39,25 @@ export default function StickyNav({
   activeSection,
   onNavigate,
 }: StickyNavProps) {
+  const activeIndex = SECTIONS.findIndex((s) => s.id === activeSection);
+  // Default to 0 (Projects) if on hero or unknown section so layout starts with Projects at top & rest at bottom
+  const currentActiveIdx = activeIndex >= 0 ? activeIndex : 0;
+
   return (
     <aside className="sticky-sidebar">
       <div className="sticky-sidebar-inner">
         <nav className="sticky-nav-list" aria-label="Portfolio sections">
           {SECTIONS.map((sec, idx) => {
             const isActive = activeSection === sec.id;
-            const isPrevActive =
-              idx > 0 && activeSection === SECTIONS[idx - 1].id;
-            const isConnectedToActive = isActive || isPrevActive;
+            // The split connector sits right between the active tab and the bottom group
+            const isSplitConnector = idx === currentActiveIdx + 1;
 
             return (
               <React.Fragment key={sec.id}>
                 {idx > 0 && (
                   <div
                     className={`nav-connector ${
-                      isConnectedToActive ? "expanded active-connector" : ""
+                      isSplitConnector ? "split-connector" : ""
                     }`}
                     aria-hidden="true"
                   >

@@ -17,6 +17,11 @@ export default function Home() {
     const sectionIds = ["project", "skills", "about", "contact"];
 
     const handleScroll = () => {
+      if (window.scrollY < 250) {
+        setActiveSection("home");
+        return;
+      }
+
       if (
         window.innerHeight + window.scrollY >=
         document.documentElement.scrollHeight - 60
@@ -96,7 +101,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      <Navbar activeSection={activeSection} onNavigate={handleNavigate} />
       <div className="glow1"></div>
 
       <div className="w-full">
