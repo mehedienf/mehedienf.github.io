@@ -29,7 +29,7 @@ export default function Home() {
     const targetY =
       id === "home"
         ? 0
-        : element.getBoundingClientRect().top + window.scrollY - 100;
+        : element.getBoundingClientRect().top + window.scrollY - 30;
 
     window.scrollTo({
       top: targetY,
