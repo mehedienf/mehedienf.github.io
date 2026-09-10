@@ -74,22 +74,8 @@ export default function Navbar({
   };
 
   return (
-    <header
-      className={`header-wrapper ${isScrolled ? "header-scrolled" : ""} ${
-        isVisible ? "" : "header-hidden"
-      }`}
-    >
+    <header className="header-wrapper">
       <nav className="header-capsule" aria-label="Main navigation">
-        {/* Brand Logo */}
-        <a
-          href="#home"
-          onClick={(e) => handleClick(e, "home")}
-          className="nav-brand"
-        >
-          <span className="nav-brand-badge">N</span>
-          <span className="nav-brand-text">Nerjhor</span>
-        </a>
-
         {/* Desktop Nav Links */}
         <ul className="nav-links">
           {navItems.map((item) => {
