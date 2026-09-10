@@ -54,8 +54,6 @@ export default function StickyNav({
                     aria-hidden="true"
                   >
                     <span className="connector-string"></span>
-                    <span className="connector-dot"></span>
-                    <span className="connector-string"></span>
                   </div>
                 )}
                 <button
