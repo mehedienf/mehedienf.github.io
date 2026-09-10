@@ -4,24 +4,29 @@ import React from "react";
 interface NavSection {
   id: string;
   label: string;
+  icon: string;
 }
 
 const SECTIONS: NavSection[] = [
   {
     id: "project",
     label: "Projects",
+    icon: "bi-grid-1x2",
   },
   {
     id: "skills",
     label: "Skills",
+    icon: "bi-cpu",
   },
   {
     id: "about",
     label: "About",
+    icon: "bi-person-badge",
   },
   {
     id: "contact",
     label: "Contact",
+    icon: "bi-chat-left-text",
   },
 ];
 
@@ -61,7 +66,8 @@ export default function StickyNav({
                   onClick={() => onNavigate(sec.id)}
                   className={`sticky-nav-pill ${isActive ? "active" : ""}`}
                 >
-                  {sec.label}
+                  <i className={`bi ${sec.icon} sticky-nav-pill-icon`}></i>
+                  <span>{sec.label}</span>
                 </button>
               </React.Fragment>
             );
