@@ -69,9 +69,9 @@ export default function Projects() {
                     <i className="bi bi-github"></i> GitHub
                   </a>
                 )}
-                {(proj.details || proj.live) && (
+                {proj.details && (
                   <a
-                    href={proj.details || proj.live}
+                    href={proj.details}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="project-btn"
