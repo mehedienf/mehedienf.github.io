@@ -181,11 +181,62 @@ export const portfolioData = {
       ],
     },
   ],
+  education: [
+    {
+      degree: "B.Sc. in Computer Science & Engineering",
+      institution: "Patuakhali Science and Technology University",
+      location: "Patuakhali, Barishal, Bangladesh",
+      period: "Ongoing",
+      grade: "3rd Year (Running)",
+      description:
+        "Focused on Software Engineering, Data Structures & Algorithms, Object-Oriented Programming, Database Systems, and Cloud Computing.",
+      highlights: [
+        "Major in Software Systems & Full Stack Development",
+        "Active coursework in Advanced Algorithms & System Design",
+      ],
+    },
+    {
+      degree: "National Android Development Bootcamp",
+      institution: "bdapps — National Appstore of Bangladesh",
+      location: "Dhaka, Bangladesh",
+      period: "2026 · 3 Months",
+      grade: "Completed",
+      description:
+        "Hands-on 3-month intensive bootcamp on Android application architecture, modern UI design, RESTful API integration, background services, and bdapps developer platform integration.",
+      highlights: [
+        "Native Android App Architecture & Modern Mobile UI/UX",
+        "API Integration, Local Storage & Mobile Application Deployment",
+      ],
+    },
+    {
+      degree: "Professional Java Development (EDGE Course)",
+      institution: "EDGE Project — Bangladesh Computer Council (BCC)",
+      location: "Patuakhali, Barishal, Bangladesh",
+      period: "2023 · 6 Months",
+      grade: "Completed",
+      description:
+        "An intensive 6-month specialized program covering Advanced Java, Object-Oriented Software Design, Enterprise Architecture, Spring Boot, REST APIs, and Database Management.",
+      highlights: [
+        "Advanced OOP, Multithreading & Software Design Patterns",
+        "Enterprise Application Development & Backend Architecture",
+      ],
+    },
+    {
+      degree: "Higher Secondary Certificate (HSC)",
+      institution: "Dhaka Commerce College",
+      location: "Dhaka, Bangladesh",
+      period: "2019 — 2021",
+      grade: "GPA: 4.92 / 5.00",
+      description:
+        "Science background with specialized focus on Mathematics, Physics, Chemistry, and Information & Communication Technology (ICT).",
+      highlights: [],
+    },
+  ],
   contact: {
     email: "enammehedi06@gmail.com",
     github: "https://github.com/mehedienf",
     linkedin: "https://linkedin.com/in/mehedienf",
     whatsapp: "#",
-    facebook: "#",
+    facebook: "https://www.facebook.com/mehedi.enf",
   },
 };

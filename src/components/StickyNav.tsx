@@ -24,6 +24,11 @@ const SECTIONS: NavSection[] = [
     icon: "bi-briefcase",
   },
   {
+    id: "education",
+    label: "Education",
+    icon: "bi-mortarboard",
+  },
+  {
     id: "contact",
     label: "Contact",
     icon: "bi-chat-left-text",

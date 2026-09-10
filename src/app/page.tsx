@@ -1,6 +1,7 @@
 "use client";
 
 import Contact from "@/components/Contact";
+import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -47,7 +48,13 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const sectionIds = ["project", "skills", "experience", "contact"];
+    const sectionIds = [
+      "project",
+      "skills",
+      "experience",
+      "education",
+      "contact",
+    ];
 
     const handleScroll = () => {
       if (isProgrammaticScroll.current) return;
@@ -57,18 +64,14 @@ export default function Home() {
         return;
       }
 
-      // Check if page reached near bottom and contact is in view
-      const contactEl = document.getElementById("contact");
+      // Check if user scrolled to absolute bottom of page
       const isNearBottom =
         window.innerHeight + window.scrollY >=
-        document.documentElement.scrollHeight - 50;
+        document.documentElement.scrollHeight - 25;
 
-      if (isNearBottom && contactEl) {
-        const contactRect = contactEl.getBoundingClientRect();
-        if (contactRect.top <= window.innerHeight * 0.8) {
-          setActiveSection("contact");
-          return;
-        }
+      if (isNearBottom) {
+        setActiveSection("contact");
+        return;
       }
 
       // Viewport reading focus line: 35% from viewport top
@@ -173,6 +176,7 @@ export default function Home() {
               <Projects />
               <Skills />
               <Experience />
+              <Education />
               <Contact />
             </div>
           </div>
