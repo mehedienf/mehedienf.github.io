@@ -4,13 +4,12 @@ export default function Experience() {
   return (
     <section id="experience" className="experience content">
       <div className="section-header">
-        <span className="section-badge">
-          <i className="bi bi-briefcase"></i> 03 / Career & Experience
-        </span>
-        <h2 className="section-title">Work Experience</h2>
+        <h2 className="section-badge">
+          <i className="bi bi-briefcase"></i> Career & Experience
+        </h2>
         <p className="section-subtitle">
           My professional journey, key roles, companies I&apos;ve worked with,
-          and current ongoing positions.
+          and ongoing positions.
         </p>
         <div className="section-divider"></div>
       </div>

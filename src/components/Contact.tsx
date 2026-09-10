@@ -4,10 +4,9 @@ export default function Contact() {
   return (
     <section id="contact" className="contact content">
       <div className="section-header">
-        <span className="section-badge">
-          <i className="bi bi-chat-left-text"></i> 04 / Connect
-        </span>
-        <h2 className="section-title">Let&apos;s Connect</h2>
+        <h2 className="section-badge">
+          <i className="bi bi-chat-left-text"></i> Connect
+        </h2>
         <p className="section-subtitle">
           Have an exciting project, freelance opportunity, or just want to say
           hi? Feel free to reach out.

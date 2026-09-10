@@ -4,10 +4,9 @@ export default function Skills() {
   return (
     <section id="skills" className="skills content">
       <div className="section-header">
-        <span className="section-badge">
-          <i className="bi bi-cpu"></i> 02 / Skills & Stack
-        </span>
-        <h2 className="section-title">Technical Expertise</h2>
+        <h2 className="section-badge">
+          <i className="bi bi-cpu"></i> Skills & Stack
+        </h2>
         <p className="section-subtitle">
           A comprehensive breakdown of the core technologies, frameworks, and
           modern tools I specialize in.

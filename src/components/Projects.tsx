@@ -5,10 +5,9 @@ export default function Projects() {
   return (
     <section id="project" className="project content">
       <div className="section-header">
-        <span className="section-badge">
-          <i className="bi bi-grid-1x2"></i> 01 / Portfolio
-        </span>
-        <h2 className="section-title">Featured Projects</h2>
+        <h2 className="section-badge">
+          <i className="bi bi-grid-1x2"></i> Projects
+        </h2>
         <p className="section-subtitle">
           A showcase of full-stack web applications, interactive interfaces, and
           modern UI solutions.
