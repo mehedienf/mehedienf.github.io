@@ -13,16 +13,40 @@ export const portfolioData = {
       "I am a passionate developer with a love for creating beautiful and functional web applications. I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding, you'll find me exploring new technologies and learning new skills.",
     skillsCategories: [
       {
+        title: "Programming Languages",
+        icon: "bi-braces",
+        description: "Core languages for software development and algorithms.",
+        skills: [
+          {
+            name: "JavaScript (ES6+)",
+            level: "Advanced",
+            icon: "bi-filetype-js",
+          },
+          { name: "TypeScript", level: "Advanced", icon: "bi-code-slash" },
+          { name: "Python", level: "Proficient", icon: "bi-filetype-py" },
+          {
+            name: "C / C++",
+            level: "Intermediate",
+            icon: "bi-file-earmark-code",
+          },
+          { name: "SQL", level: "Proficient", icon: "bi-database" },
+          { name: "HTML5 & CSS3", level: "Expert", icon: "bi-filetype-html" },
+        ],
+      },
+      {
         title: "Frontend Development",
         icon: "bi-window-stack",
         description: "Modern, responsive, and interactive user interfaces.",
         skills: [
           { name: "React.js", level: "Advanced", icon: "bi-window" },
           { name: "Next.js", level: "Advanced", icon: "bi-triangle" },
-          { name: "TypeScript", level: "Proficient", icon: "bi-code-slash" },
-          { name: "JavaScript", level: "Advanced", icon: "bi-filetype-js" },
           { name: "Tailwind CSS", level: "Advanced", icon: "bi-wind" },
-          { name: "HTML5 & CSS3", level: "Expert", icon: "bi-filetype-html" },
+          {
+            name: "Redux / Zustand",
+            level: "Proficient",
+            icon: "bi-diagram-3",
+          },
+          { name: "UI/UX Design", level: "Advanced", icon: "bi-palette" },
         ],
       },
       {
@@ -33,7 +57,7 @@ export const portfolioData = {
         skills: [
           { name: "Node.js", level: "Proficient", icon: "bi-hdd-network" },
           {
-            name: "Next.js API",
+            name: "Next.js API Routes",
             level: "Advanced",
             icon: "bi-lightning-charge",
           },
@@ -43,9 +67,9 @@ export const portfolioData = {
             icon: "bi-arrow-left-right",
           },
           {
-            name: "Database / SQL",
-            level: "Intermediate",
-            icon: "bi-database",
+            name: "PostgreSQL / MongoDB",
+            level: "Proficient",
+            icon: "bi-database-check",
           },
         ],
       },
@@ -55,16 +79,12 @@ export const portfolioData = {
         description: "Version control, developer tools, and deployment.",
         skills: [
           { name: "Git & GitHub", level: "Advanced", icon: "bi-git" },
+          { name: "Docker", level: "Intermediate", icon: "bi-box-seam" },
           { name: "VS Code", level: "Expert", icon: "bi-terminal" },
           {
-            name: "Vercel / Hosting",
+            name: "Vercel / Cloud Hosting",
             level: "Proficient",
             icon: "bi-cloud-check",
-          },
-          {
-            name: "UI/UX & Glassmorphism",
-            level: "Advanced",
-            icon: "bi-palette",
           },
         ],
       },

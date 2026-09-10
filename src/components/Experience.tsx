@@ -17,29 +17,13 @@ export default function Experience() {
 
       <div className="experience-timeline">
         {portfolioData.experiences.map((exp, idx) => (
-          <div
-            className={`experience-card ${exp.isCurrent ? "experience-card-current" : ""}`}
-            key={idx}
-          >
-            {/* Timeline Line Connector */}
-            <div className="experience-timeline-dot">
-              <span
-                className={`exp-dot ${exp.isCurrent ? "exp-dot-active" : ""}`}
-              ></span>
-            </div>
-
+          <div className="experience-card" key={idx}>
             <div className="experience-content-box">
               {/* Header: Role, Company, Period */}
               <div className="experience-card-header">
                 <div>
                   <div className="experience-role-row">
                     <h3 className="experience-role">{exp.role}</h3>
-                    {exp.isCurrent && (
-                      <span className="experience-current-badge">
-                        <span className="experience-pulse-dot"></span>
-                        Current
-                      </span>
-                    )}
                   </div>
                   <div className="experience-company-meta">
                     <span className="experience-company">
