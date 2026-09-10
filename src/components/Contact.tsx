@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="contact content">
       <div className="section-header">
         <h2 className="section-badge">
-          <i className="bi bi-chat-left-text"></i> Connect
+          <i className="bi bi-chat-left-text"></i> Connect || Contact
         </h2>
         <p className="section-subtitle">
           Have an exciting project, freelance opportunity, or just want to say

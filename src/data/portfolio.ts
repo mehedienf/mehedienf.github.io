@@ -18,19 +18,20 @@ export const portfolioData = {
         description: "Core languages for software development and algorithms.",
         skills: [
           {
+            name: "C / C++",
+            level: "Proficient",
+            icon: "bi-terminal",
+          },
+          { name: "Java", level: "Proficient", icon: "bi-filetype-java" },
+          { name: "C#", level: "Proficient", icon: "bi-file-earmark-code" },
+          { name: "Dart", level: "Proficient", icon: "bi-code-square" },
+          {
             name: "JavaScript (ES6+)",
             level: "Advanced",
             icon: "bi-filetype-js",
           },
           { name: "TypeScript", level: "Advanced", icon: "bi-code-slash" },
           { name: "Python", level: "Proficient", icon: "bi-filetype-py" },
-          {
-            name: "C / C++",
-            level: "Intermediate",
-            icon: "bi-file-earmark-code",
-          },
-          { name: "SQL", level: "Proficient", icon: "bi-database" },
-          { name: "HTML5 & CSS3", level: "Expert", icon: "bi-filetype-html" },
         ],
       },
       {
@@ -38,14 +39,12 @@ export const portfolioData = {
         icon: "bi-window-stack",
         description: "Modern, responsive, and interactive user interfaces.",
         skills: [
+          { name: "Flutter", level: "Advanced", icon: "bi-phone" },
           { name: "React.js", level: "Advanced", icon: "bi-window" },
           { name: "Next.js", level: "Advanced", icon: "bi-triangle" },
+          { name: "HTML5 & CSS3", level: "Expert", icon: "bi-filetype-html" },
           { name: "Tailwind CSS", level: "Advanced", icon: "bi-wind" },
-          {
-            name: "Redux / Zustand",
-            level: "Proficient",
-            icon: "bi-diagram-3",
-          },
+          { name: "Bootstrap CSS", level: "Advanced", icon: "bi-bootstrap" },
           { name: "UI/UX Design", level: "Advanced", icon: "bi-palette" },
         ],
       },
@@ -55,6 +54,11 @@ export const portfolioData = {
         description:
           "Server-side logic, API endpoints, and database workflows.",
         skills: [
+          {
+            name: ".NET / ASP.NET Core",
+            level: "Proficient",
+            icon: "bi-layers-half",
+          },
           { name: "Node.js", level: "Proficient", icon: "bi-hdd-network" },
           {
             name: "Next.js API Routes",
@@ -71,6 +75,11 @@ export const portfolioData = {
             level: "Proficient",
             icon: "bi-database-check",
           },
+          {
+            name: "Firebase",
+            level: "Proficient",
+            icon: "bi-fire",
+          },
         ],
       },
       {
@@ -79,10 +88,11 @@ export const portfolioData = {
         description: "Version control, developer tools, and deployment.",
         skills: [
           { name: "Git & GitHub", level: "Advanced", icon: "bi-git" },
+          { name: "Postman", level: "Proficient", icon: "bi-send-check" },
           { name: "Docker", level: "Intermediate", icon: "bi-box-seam" },
           { name: "VS Code", level: "Expert", icon: "bi-terminal" },
           {
-            name: "Vercel / Cloud Hosting",
+            name: "Cloud Hosting",
             level: "Proficient",
             icon: "bi-cloud-check",
           },
