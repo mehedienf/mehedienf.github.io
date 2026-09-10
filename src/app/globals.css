@@ -423,64 +423,60 @@ main {
   box-shadow: 0 5px 14px rgba(11, 12, 16, 0.15);
 }
 
-/* Hero Portrait Frame */
+/* Hero Image - Standalone with Fade-to-Bottom Gradient Mask */
 .home-image {
-  flex: 0 1 380px;
+  flex: 0 1 420px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   position: relative;
   box-sizing: border-box;
+  background: transparent !important;
+  border: none !important;
 }
 
-.hero-image-frame {
+.hero-image-wrapper {
   position: relative;
-  width: clamp(260px, 28vw, 360px);
-  aspect-ratio: 3 / 4;
-  border-radius: 28px;
+  width: clamp(280px, 32vw, 420px);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  z-index: 2;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-.hero-image-ambient {
-  position: absolute;
-  inset: -14px;
-  border-radius: 36px;
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(99, 102, 241, 0.22) 0%,
-    rgba(168, 85, 247, 0.16) 40%,
-    rgba(56, 189, 248, 0.14) 70%,
-    transparent 90%
-  );
-  filter: blur(20px);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.hero-avatar {
+.hero-person-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 24px;
-  position: relative;
-  z-index: 2;
-  border: 2px solid rgba(255, 255, 255, 0.9);
-  box-shadow:
-    0 20px 40px rgba(11, 12, 16, 0.1),
-    0 4px 12px rgba(11, 12, 16, 0.05);
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  /* Gradual fade-to-bottom mask effect blending smoothly into the website background */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 62%,
+    rgba(0, 0, 0, 0.8) 72%,
+    rgba(0, 0, 0, 0.35) 86%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 62%,
+    rgba(0, 0, 0, 0.8) 72%,
+    rgba(0, 0, 0, 0.35) 86%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transition: transform 0.3s ease;
 }
 
-.hero-avatar:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow:
-    0 24px 48px rgba(11, 12, 16, 0.14),
-    0 6px 16px rgba(11, 12, 16, 0.07);
+.hero-person-img:hover {
+  transform: translateY(-4px);
 }
 
 /* Responsive Media Queries */
@@ -528,8 +524,8 @@ main {
     width: 100%;
     justify-content: center;
   }
-  .hero-image-frame {
-    width: 240px;
+  .hero-image-wrapper {
+    width: 260px;
   }
 }
 

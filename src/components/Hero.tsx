@@ -82,17 +82,16 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Hero Portrait Frame */}
+      {/* Hero Image */}
       <div className="home-image">
-        <div className="hero-image-frame">
-          <div className="hero-image-ambient"></div>
+        <div className="hero-image-wrapper">
           <Image
             src={portfolioData.hero.image}
             alt={portfolioData.hero.name}
-            width={380}
-            height={507}
+            width={400}
+            height={533}
             priority
-            className="hero-avatar"
+            className="hero-person-img"
           />
         </div>
       </div>
