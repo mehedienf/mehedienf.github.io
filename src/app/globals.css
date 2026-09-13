@@ -1173,18 +1173,19 @@ h2.section-badge i,
   width: 100%;
 }
 
+
 .education-card {
-  background: transparent;
-  border: 1.5px solid rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
   padding: 1.75rem 2rem;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  box-shadow: 0 4px 20px rgba(11, 12, 16, 0.025);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 4px 15px rgba(11, 12, 16, 0.05);
   transition:
     transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    background 0.3s ease;
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -1192,9 +1193,8 @@ h2.section-badge i,
 
 .education-card:hover {
   transform: translateY(-4px);
-  background: transparent;
-  border-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 8px 28px rgba(85, 74, 204, 0.08);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 25px rgba(85, 74, 204, 0.12);
 }
 
 .education-card-header {
@@ -1205,7 +1205,7 @@ h2.section-badge i,
   gap: 1rem;
   margin-bottom: 1.15rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(11, 12, 16, 0.08);
 }
 
 .education-degree-row {
@@ -1295,19 +1295,19 @@ h2.section-badge i,
   gap: 7px;
   padding: 6px 14px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.85);
+  background: #554acc;
   font-family: var(--heading-font-family);
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: rgba(11, 12, 16, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 6px rgba(11, 12, 16, 0.03);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 6px rgba(85, 74, 204, 0.2);
 }
 
 .education-period-badge i {
   font-size: 0.85rem;
-  color: #554acc;
+  color: #ffffff;
 }
 
 .education-desc {
@@ -1337,6 +1337,161 @@ h2.section-badge i,
 }
 
 .education-highlights li i {
+  color: #554acc;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Extra-Curricular Activities Section
+   ========================================================================== */
+
+.activities-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 100%;
+}
+
+.activity-card {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 1.75rem 2rem;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: 0 4px 20px rgba(11, 12, 16, 0.025);
+  transition:
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.activity-card:hover {
+  transform: translateY(-4px);
+  background: transparent;
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 28px rgba(85, 74, 204, 0.08);
+}
+
+.activity-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.15rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.activity-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.activity-title {
+  font-family: var(--heading-font-family);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.activity-org-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: rgba(11, 12, 16, 0.72);
+  margin-top: 6px;
+}
+
+.activity-org {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #554acc;
+  font-weight: 600;
+}
+
+.activity-org i {
+  font-size: 0.95rem;
+}
+
+.activity-meta-sep {
+  color: rgba(11, 12, 16, 0.25);
+}
+
+.activity-role {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(11, 12, 16, 0.8);
+  font-weight: 500;
+}
+
+.activity-role i {
+  font-size: 0.9rem;
+  color: #554acc;
+}
+
+.activity-period-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  font-family: var(--heading-font-family);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(11, 12, 16, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 6px rgba(11, 12, 16, 0.03);
+}
+
+.activity-period-badge i {
+  font-size: 0.85rem;
+  color: #554acc;
+}
+
+.activity-desc {
+  font-size: 0.96rem;
+  line-height: 1.75;
+  letter-spacing: 0.025em;
+  color: rgba(11, 12, 16, 0.78);
+  margin: 0 0 1rem 0;
+}
+
+.activity-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.activity-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(11, 12, 16, 0.74);
+}
+
+.activity-highlights li i {
   color: #554acc;
   font-size: 1.1rem;
   line-height: 1.4;

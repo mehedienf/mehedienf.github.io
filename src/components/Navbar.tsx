@@ -54,6 +54,7 @@ export default function Navbar({
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "education", label: "Education" },
+    { id: "activities", label: "Activities" },
     { id: "contact", label: "Contact" },
   ];
 

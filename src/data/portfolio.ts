@@ -232,6 +232,47 @@ export const portfolioData = {
       highlights: [],
     },
   ],
+  activities: [
+    {
+      title: "Campus Ambassador",
+      organization: "bdapps | Patuakhali Science and Technology University",
+      role: "Ambassador",
+      period: "2026 — Present",
+      description:
+        "Serving as the campus representative for bdapps at Patuakhali Science and Technology University (PSTU). Promoting the national app development ecosystem among university students.",
+      highlights: [
+        "Representing bdapps in the university campus",
+        "Encouraging and assisting students to develop and publish apps on the bdapps platform",
+      ],
+      icon: "bi-megaphone",
+    },
+    {
+      title: "Competitive Programming & Problem Solving",
+      organization: "University Programming Club & Online Judges",
+      role: "Active Problem Solver",
+      period: "2022 — Present",
+      description:
+        "Regularly practicing algorithmic problem-solving and participating in competitive programming contests across various platforms.",
+      highlights: [
+        "Solved 300+ algorithmic problems across Codeforces, LeetCode, and Beecrowd",
+        "Participated in intra-university programming contests and national hackathons",
+      ],
+      icon: "bi-trophy",
+    },
+    {
+      title: "Tech Community & Workshop Organizing",
+      organization: "Computer Science & Developer Community",
+      role: "Organizer & Contributor",
+      period: "2023 — Present",
+      description:
+        "Actively organizing and contributing to student technical workshops, coding bootcamps, and developer meetups to foster peer-learning and collaboration.",
+      highlights: [
+        "Assisted in conducting introductory sessions on Git, GitHub, and Full Stack Web development",
+        "Volunteered in university tech fests and programming bootcamps",
+      ],
+      icon: "bi-people",
+    },
+  ],
   contact: {
     email: "enammehedi06@gmail.com",
     github: "https://github.com/mehedienf",

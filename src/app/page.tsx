@@ -1,5 +1,6 @@
 "use client";
 
+import Activities from "@/components/Activities";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
@@ -53,6 +54,7 @@ export default function Home() {
       "skills",
       "experience",
       "education",
+      "activities",
       "contact",
     ];
 
@@ -177,6 +179,7 @@ export default function Home() {
               <Skills />
               <Experience />
               <Education />
+              <Activities />
               <Contact />
             </div>
           </div>
