@@ -1310,6 +1310,50 @@ h2.section-badge i,
   color: #ffffff;
 }
 
+
+.education-toggle-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.education-toggle-btn {
+  background: rgba(85, 74, 204, 0.08);
+  border: 1px solid rgba(85, 74, 204, 0.2);
+  color: #554acc;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.education-toggle-btn:hover {
+  background: rgba(85, 74, 204, 0.18);
+  border-color: rgba(85, 74, 204, 0.4);
+  color: #3b3096;
+  transform: translateY(-1px);
+}
+
+.education-details-wrap {
+  margin-top: 0.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed rgba(85, 74, 204, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .education-desc {
   font-size: 0.96rem;
   line-height: 1.75;

@@ -140,6 +140,47 @@ export const portfolioData = {
   ],
   experiences: [
     {
+      role: "Campus Ambassador",
+      company: "bdapps",
+      location: "Patuakhali Science and Technology University",
+      period: "2026 — Present",
+      isCurrent: true,
+      description:
+        "Serving as the campus representative for bdapps at Patuakhali Science and Technology University (PSTU). Promoting the national app development ecosystem among university students.",
+      achievements: [
+        "Representing bdapps in the university campus and organizing tech awareness campaigns.",
+        "Encouraging and assisting students to develop and publish apps on the bdapps platform.",
+      ],
+      technologies: [
+        "Community Leadership",
+        "Mentoring",
+        "Public Speaking",
+        "App Ecosystem",
+      ],
+    },
+
+    {
+      role: "Founder & Software Engineer",
+      company: "OlivoSoft",
+      location: "Bangladesh · Remote",
+      period: "2026 — Present",
+      isCurrent: true,
+      description:
+        "Founded a software development startup dedicated to creating scalable, robust, and modern digital solutions. Specializing in custom web and mobile applications.",
+      achievements: [
+        "Leading the development of end-to-end software products, from system architecture to deployment.",
+        "Managing client projects and ensuring high-quality delivery using modern tech stacks like Next.js, React, and Flutter.",
+      ],
+      technologies: [
+        "Software Engineering",
+        "Next.js",
+        "React",
+        "Flutter",
+        "Node.js",
+        "System Architecture",
+      ],
+    },
+    {
       role: "Full Stack Software Developer",
       company: "Current Company / Tech Agency",
       location: "Dhaka, Bangladesh · Hybrid",
@@ -233,19 +274,6 @@ export const portfolioData = {
     },
   ],
   activities: [
-    {
-      title: "Campus Ambassador",
-      organization: "bdapps | Patuakhali Science and Technology University",
-      role: "Ambassador",
-      period: "2026 — Present",
-      description:
-        "Serving as the campus representative for bdapps at Patuakhali Science and Technology University (PSTU). Promoting the national app development ecosystem among university students.",
-      highlights: [
-        "Representing bdapps in the university campus",
-        "Encouraging and assisting students to develop and publish apps on the bdapps platform",
-      ],
-      icon: "bi-megaphone",
-    },
     {
       title: "Competitive Programming & Problem Solving",
       organization: "University Programming Club & Online Judges",
