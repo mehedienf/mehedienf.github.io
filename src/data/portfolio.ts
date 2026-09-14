@@ -107,8 +107,33 @@ export const portfolioData = {
       icon: "bi-bag-check-fill",
       iconGradient:
         "linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.25))",
+      images: [
+        "/images/projects/ecommerce-1.svg",
+        "/images/projects/ecommerce-2.svg",
+      ],
       description:
         "A full-stack e-commerce solution with Next.js, featuring user authentication, payment processing, and a dynamic product catalog.",
+      myWork: [
+        "Architected and developed full-stack features using Next.js App Router and PostgreSQL.",
+        "Implemented secure user authentication, session handling, and profile management.",
+        "Integrated online checkout workflow with payment verification.",
+        "Engineered responsive UI components and real-time cart state with custom React hooks.",
+      ],
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "PostgreSQL",
+        "REST API",
+      ],
+      features: [
+        "Dynamic product browsing, multi-criteria filtering, and instant search.",
+        "Secure user authentication, cart management, and seamless checkout workflow.",
+        "Integrated online payment gateway with transaction verification.",
+        "Comprehensive admin dashboard for products, inventory, and order fulfillment.",
+      ],
       view: "#",
       github: "https://github.com/mehedienf",
       details: "#",
@@ -119,8 +144,31 @@ export const portfolioData = {
       icon: "bi-check2-square",
       iconGradient:
         "linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.25))",
+      images: [
+        "/images/projects/taskapp-1.svg",
+        "/images/projects/taskapp-2.svg",
+      ],
       description:
         "A productivity suite built with React and Firebase, allowing users to organize tasks, set deadlines, and track progress seamlessly.",
+      myWork: [
+        "Designed and built interactive Kanban board with drag-and-drop task state transitions.",
+        "Integrated Firebase Firestore for real-time multi-client document synchronization.",
+        "Created custom filter algorithms for priority, due dates, and project categorizations.",
+        "Optimized client-side rendering and asset bundle sizes for snappy mobile interactions.",
+      ],
+      technologies: [
+        "React.js",
+        "Firebase",
+        "Cloud Firestore",
+        "Tailwind CSS",
+        "JavaScript (ES6+)",
+      ],
+      features: [
+        "Real-time task synchronization across multiple browser tabs and devices.",
+        "Kanban board & categorized list views with drag-and-drop support.",
+        "Priority tagging, deadline reminders, and smart notification alerts.",
+        "Progress analytics and sprint tracking metrics for productivity.",
+      ],
       view: "#",
       github: "https://github.com/mehedienf",
       details: "#",
@@ -131,8 +179,31 @@ export const portfolioData = {
       icon: "bi-layers-fill",
       iconGradient:
         "linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(139, 92, 246, 0.25))",
+      images: [
+        "/images/projects/portfolio-1.svg",
+        "/images/projects/portfolio-2.svg",
+      ],
       description:
         "A sleek portfolio designed with modern Next.js App Router, glassmorphism UI, interactive sticky navigation, and animations.",
+      myWork: [
+        "Conceptualized and developed unique glassmorphism visual identity with custom CSS.",
+        "Engineered reading-focus line scrollspy for responsive vertical and mobile sticky navbars.",
+        "Built interactive floating modal dialogs with multi-screenshot image carousels.",
+        "Configured static export pipeline optimized for high-speed cPanel deployment.",
+      ],
+      technologies: [
+        "Next.js 16",
+        "TypeScript",
+        "CSS3 / PostCSS",
+        "Webpack",
+        "Static Export",
+      ],
+      features: [
+        "Custom vertical & horizontal sticky sidebar navigation with real-time scrollspy.",
+        "Frosted glassmorphism aesthetic with high contrast and smooth responsiveness.",
+        "Interactive expandable sections for academic qualifications and activities.",
+        "Floating project detail modal with detailed tech stack and feature breakdown.",
+      ],
       view: "#",
       github: "https://github.com/mehedienf",
       details: "#",
