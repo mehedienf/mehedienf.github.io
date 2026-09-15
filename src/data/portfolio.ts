@@ -152,8 +152,21 @@ export const portfolioData = {
       iconGradient:
         "linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(234, 88, 12, 0.25))", // A green-orange gradient reflecting agriculture and emergency themes
       images: [
-        "/images/projects/prantik-1.svg",
-        "/images/projects/prantik-2.svg",
+        "/images/projects/prantik/prantik-0.jpeg",
+        "/images/projects/prantik/prantik-1.jpeg",
+        "/images/projects/prantik/prantik-2.jpeg",
+        "/images/projects/prantik/prantik-3.jpeg",
+        "/images/projects/prantik/prantik-4.jpeg",
+        "/images/projects/prantik/prantik-5.jpeg",
+        "/images/projects/prantik/prantik-6.jpeg",
+        "/images/projects/prantik/prantik-7.jpeg",
+        "/images/projects/prantik/prantik-8.jpeg",
+        "/images/projects/prantik/prantik-9.jpeg",
+        "/images/projects/prantik/prantik-10.jpeg",
+        "/images/projects/prantik/prantik-11.jpeg",
+        "/images/projects/prantik/prantik-12.jpeg",
+        "/images/projects/prantik/prantik-13.jpeg",
+        "/images/projects/prantik/prantik-14.jpeg",
       ],
       description:
         "A comprehensive multi-purpose application for Bangladesh combining disaster management, agricultural assistance, emergency services, and dedicated women's safety features.",
