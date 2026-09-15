@@ -103,7 +103,7 @@ export const portfolioData = {
   projects: [
     {
       title: "RobopilotBD e-Commerce Website",
-      logo: "/images/projects/robopilotbd/icon.png",
+      logo: "/images/projects/robopilotbd/rpbd-icon.png",
       icon: "bi-robot",
       iconGradient:
         "linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(59, 130, 246, 0.25))",
@@ -147,7 +147,7 @@ export const portfolioData = {
     },
     {
       title: "Prantik - Disaster, Agriculture & Safety App",
-      logo: "",
+      logo: "/images/projects/prantik/prantik-icon.png",
       icon: "bi-shield-shaded", // You can also use "bi-shield-plus" or "bi-umbrella-fill"
       iconGradient:
         "linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(234, 88, 12, 0.25))", // A green-orange gradient reflecting agriculture and emergency themes
